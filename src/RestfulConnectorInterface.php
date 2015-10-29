@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \RestfulConnector\ConnectorInterface.
+ * Contains \RestfulConnector\RestfulConnectorInterface.
  *
  * (c) Ryan Armstrong <jenova49@gmail.com>
  *
@@ -17,40 +17,30 @@ namespace RestfulConnector
  *
  * @author Ryan Armstrong <jenova49@gmail.com>
  */
-interface ConnectorInterface
+interface RestfulConnectorInterface
 {
     /**
      * @todo Write the documentation.
      */
-    public function collection(array $filters) {
-        return 'This is a collection connection';
-    }
+    public function collection(array $filters);
 
     /**
      * @todo Write the documentation.
      */
-    public function create() {
-        return 'This is a creation connection';
-    }
+    public function create();
 
     /**
      * @todo Write the documentation.
      */
-    public function retrieve($id) {
-        return 'This is a retrieval connection';
-    }
+    public function retrieve($id);
 
     /**
      * @todo Write the documentation.
      */
-    public function update($id, array $fields) {
-        return 'This is a update connection';
-    }
+    public function update($id, array $fields);
 
     /**
      * @todo Write the documentation.
      */
-    public function delete($id) {
-        return 'This is a delete connection';
-    }
+    public function delete($id);
 }
