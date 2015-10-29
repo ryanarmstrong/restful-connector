@@ -10,7 +10,7 @@
  * file that was distributed with this source code.
  */
 
-namespace RestfulConnector
+namespace RestfulConnector;
 
 /**
  * Interface that all Restful Connectors must implement.
