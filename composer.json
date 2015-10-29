@@ -1,0 +1,20 @@
+{
+	"name": "ryanarmstrong/restful-connector",
+    "type": "library",
+    "description": "RESTful Connector is a simple interface to impliment to connect controllers to one or more RESTful sources.",
+    "keywords": ["framework", "http", "rest", "web service"],
+    "homepage": "https://github.com/ryanarmstrong/restful-connector",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ryan Armstrong",
+            "email": "jenova49@gmail.com",
+            "homepage": "https://github.com/ryanarmstrong"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RestfulConnector\\": "src/"
+        }
+    }
+}
