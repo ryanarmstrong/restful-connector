@@ -27,7 +27,7 @@ interface RestfulConnectorTypedInterface
     /**
      * @todo Write the documentation.
      */
-    public function create($type);
+    public function create($type, $resource);
 
     /**
      * @todo Write the documentation.

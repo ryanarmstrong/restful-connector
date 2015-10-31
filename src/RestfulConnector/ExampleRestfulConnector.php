@@ -31,7 +31,7 @@ class ExampleRestfulConnector implements RestfulConnectorInterface
     /**
      * @todo Write the documentation.
      */
-    public function create() {
+    public function create($resource) {
         return 'This is a creation connection';
     }
 
