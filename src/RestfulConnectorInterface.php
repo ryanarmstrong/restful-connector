@@ -48,6 +48,16 @@ interface RestfulConnectorInterface
     public function retrieve($id);
 
     /**
+     * Replace a resource.
+     * 
+     * @param  mixed  $id       The ID of the resource to update.
+     * @param  object $resource The full resource object to create.
+     * 
+     * @return Response
+     */
+    public function replace($id, array $resource);
+
+    /**
      * Update a resource.
      * 
      * @param  mixed  $id     The ID of the resource to update.

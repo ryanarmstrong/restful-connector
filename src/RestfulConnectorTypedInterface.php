@@ -51,6 +51,17 @@ interface RestfulConnectorTypedInterface
     public function retrieve($type, $id);
 
     /**
+     * Replace a resource.
+     * 
+     * @param  string $type     The resource type to update.
+     * @param  mixed  $id       The ID of the resource to update.
+     * @param  object $resource The full resource object to create.
+     * 
+     * @return Response
+     */
+    public function replace($type, $id, array $resource);
+
+    /**
      * Update a resource.
      * 
      * @param  string $type   The resource type to update.
