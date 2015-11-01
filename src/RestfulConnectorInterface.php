@@ -55,7 +55,7 @@ interface RestfulConnectorInterface
      * 
      * @return Response
      */
-    public function replace($id, array $resource);
+    public function replace($id, $resource);
 
     /**
      * Update a resource.

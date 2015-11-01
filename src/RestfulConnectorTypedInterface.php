@@ -59,7 +59,7 @@ interface RestfulConnectorTypedInterface
      * 
      * @return Response
      */
-    public function replace($type, $id, array $resource);
+    public function replace($type, $id, $resource);
 
     /**
      * Update a resource.
