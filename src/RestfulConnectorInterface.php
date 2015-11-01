@@ -20,27 +20,49 @@ namespace RestfulConnector;
 interface RestfulConnectorInterface
 {
     /**
-     * @todo Write the documentation.
+     * Retrieve a collection of resources based on a set of filters.
+     * 
+     * @param  array|null $filters Optional filters to use. An array of 
+     *                             field_key => value.
+     * 
+     * @return Response
      */
     public function collection(array $filters);
 
     /**
-     * @todo Write the documentation.
+     * Create a resource.
+     * 
+     * @param  object $resource The full resource object to create.
+     * 
+     * @return Response
      */
     public function create($resource);
 
     /**
-     * @todo Write the documentation.
+     * Retrieve a resource.
+     * 
+     * @param  mixed  $id   The ID of the resource to retrieve.
+     * 
+     * @return Response
      */
     public function retrieve($id);
 
     /**
-     * @todo Write the documentation.
+     * Update a resource.
+     * 
+     * @param  mixed  $id     The ID of the resource to update.
+     * @param  array  $fields An array of field_key => value to update via PATCH.
+     * 
+     * @return Response
      */
     public function update($id, array $fields);
 
     /**
-     * @todo Write the documentation.
+     * Delete a resource.
+     * 
+     * @param  mixed  $id   The ID of the resource to delete.
+     * 
+     * @return Response
      */
     public function delete($id);
 }
