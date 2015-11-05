@@ -25,7 +25,7 @@ interface RestfulConnectorInterface
      * @param  array|null $filters Optional filters to use. An array of 
      *                             field_key => value.
      * 
-     * @return Response
+     * @return Symfony\Component\HttpFoundation\Response
      */
     public function collection(array $filters);
 
@@ -34,7 +34,7 @@ interface RestfulConnectorInterface
      * 
      * @param  object $resource The full resource object to create.
      * 
-     * @return Response
+     * @return Symfony\Component\HttpFoundation\Response
      */
     public function create($resource);
 
@@ -43,7 +43,7 @@ interface RestfulConnectorInterface
      * 
      * @param  mixed  $id   The ID of the resource to retrieve.
      * 
-     * @return Response
+     * @return Symfony\Component\HttpFoundation\Response
      */
     public function retrieve($id);
 
@@ -53,7 +53,7 @@ interface RestfulConnectorInterface
      * @param  mixed  $id       The ID of the resource to update.
      * @param  object $resource The full resource object to create.
      * 
-     * @return Response
+     * @return Symfony\Component\HttpFoundation\Response
      */
     public function replace($id, $resource);
 
@@ -63,7 +63,7 @@ interface RestfulConnectorInterface
      * @param  mixed  $id     The ID of the resource to update.
      * @param  array  $fields An array of field_key => value to update via PATCH.
      * 
-     * @return Response
+     * @return Symfony\Component\HttpFoundation\Response
      */
     public function update($id, array $fields);
 
@@ -72,7 +72,7 @@ interface RestfulConnectorInterface
      * 
      * @param  mixed  $id   The ID of the resource to delete.
      * 
-     * @return Response
+     * @return Symfony\Component\HttpFoundation\Response
      */
     public function delete($id);
 }
