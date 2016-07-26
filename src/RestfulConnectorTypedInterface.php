@@ -23,8 +23,7 @@ interface RestfulConnectorTypedInterface
      * Retrieve a collection of resources based on a set of filters.
      * 
      * @param  string     $type    The resource types to collect.
-     * @param  array|null $filters Optional filters to use. An array of 
-     *                             field_key => value.
+     * @param  array|null $filters Optional filters to use. An array of field_key => value.
      * 
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -34,7 +33,7 @@ interface RestfulConnectorTypedInterface
      * Create a resource.
      * 
      * @param  string $type     The resource type to create.
-     * @param  object $resource The full resource object to create.
+     * @param  string $resource The full JSON string resource object to create.
      * 
      * @return \Symfony\Component\HttpFoundation\Response
      */
